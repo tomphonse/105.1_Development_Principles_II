@@ -67,33 +67,11 @@ Player* getSelectedClass() {
 }
 
 
-//void setRaceMenu(Race race) {
-//
-//    getSelectedClass->setRace(race);
-//
-//
-//    /*switch (selectedClass) {
-//    case WARRIOR:
-//        warriorList[warriorList.size() - 1]->setRace(race);
-//        break;
-//
-//    case PRIEST:
-//
-//        break;
-//
-//    case MAGE:
-//
-//        break;
-//    }*/
-//
-//}
-
-
 int main()
 {
   
     //main loop
-    while (!finish) {
+    while (1) {
         std::cout << "\n\n\n\n";
         //class selection
         correctInput = false;
@@ -194,7 +172,7 @@ int main()
         std::cout << "\n\n\n";
         std::cout << "\t\tWARRIORS LIST\n\n";
         for (int i = 0; i < warriorList.size(); i++) {
-            std::cout << "I am a " << warriorList[i]->whatRace() << " Warrior" << ", my name is " << warriorList[i]->getName() << " and " << warriorList[i]->getAttackStr() << "\n";
+            std::cout << "I am a " << warriorList[i]->whatRace() << " Warrior, my name is " << warriorList[i]->getName() << " and " << warriorList[i]->getAttackStr() << "\n";
         }
     }
 
