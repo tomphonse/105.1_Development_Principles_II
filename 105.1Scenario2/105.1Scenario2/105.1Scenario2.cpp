@@ -3,11 +3,24 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+#include "Player.h"
+#include "Warrior.h"
 
 
 bool correctInput;
 bool finish = false;
 std::string userInput;
+
+std::vector<Warrior*> warriorList;
+
+enum SelectedClass {
+    WARRIOR,
+    PRIEST,
+    MAGE
+};
+
+SelectedClass selectedClass;
 
 
 int EnterInput(int maxNum) {
@@ -30,10 +43,65 @@ int EnterInput(int maxNum) {
     
 }
 
+
+
+Player* getSelectedClass() {
+    switch (selectedClass) {
+    case WARRIOR:
+        return warriorList[warriorList.size() - 1];
+        break;
+
+    case PRIEST:
+
+        break;
+
+    case MAGE:
+
+        break;
+    }
+
+}
+
+
+//void setRaceMenu(Race race) {
+//
+//    getSelectedClass->setRace(race);
+//
+//
+//    /*switch (selectedClass) {
+//    case WARRIOR:
+//        warriorList[warriorList.size() - 1]->setRace(race);
+//        break;
+//
+//    case PRIEST:
+//
+//        break;
+//
+//    case MAGE:
+//
+//        break;
+//    }*/
+//
+//}
+
+
 int main()
 {
+    ////testing
+    //std::string meme;
+    //Player player("jeff",50,33, DWARF);
 
-    //testing
+
+
+    //
+    ///*while (1) {
+    //    std::cout << player.getName() << "\n";
+    //    std::cout << "HP: " << player.getHitPoints() << "\n";
+    //    std::cout << "MP: " << player.getMagicPoints() << "\n";
+    //    std::cout << "RACE: " << player.getRace();
+    //    std::cin >> meme;
+
+    //}*/
 
 
 
@@ -53,7 +121,8 @@ int main()
             
             switch(EnterInput(4)) {
                 case 1: //warrior
-
+                    warriorList.push_back(new Warrior);
+                    selectedClass = WARRIOR;
                     break;
 
                 case 2: //Priest
@@ -92,23 +161,23 @@ int main()
             switch (EnterInput(5)) {
                 
             case 1: //Human
-
+                getSelectedClass()->setRace(HUMAN);
                 break;
 
             case 2: // Elf
-
+                getSelectedClass()->setRace(ELF);
                 break;
 
             case 3: //Dwarf
-
+                getSelectedClass()->setRace(DWARF);
                 break;
 
             case 4: //orc
-
+                getSelectedClass()->setRace(ORC);
                 break;
 
             case 5: //troll
-
+                getSelectedClass()->setRace(TROLL);
                 break;
 
             default:
@@ -122,7 +191,19 @@ int main()
         //Name Input
         std::cout << "\tNAME\n";
         std::cout << "\tGive your player a name: ";
+        std::cin >> userInput;
+        getSelectedClass()->setName(userInput);
+
     }
+
+    if (warriorList.size() > 0) {
+        std::cout << "\n\n\n";
+        std::cout << "\t\tWARRIORS LIST\n\n";
+        for (int i = 0; i < warriorList.size(); i++) {
+
+        }
+    }
+
     
 }
 
