@@ -17,7 +17,6 @@ private:
 	int hitPoints;
 	int magicPoints;
 	Race race;
-
 	std::string attackStr;
 	
 	
@@ -41,7 +40,6 @@ public:
 	Race getRace();
 
 	std::string whatRace();
-
 	std::string getAttackStr();
 
 	//setters
@@ -49,7 +47,6 @@ public:
 	void setHitPoints(int hitpoints);
 	void setMagicPoints(int magicPoints);
 	void setRace(Race race);
-
 	void setAttackStr(std::string attackStr);
 
 

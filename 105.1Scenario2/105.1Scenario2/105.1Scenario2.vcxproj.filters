@@ -24,12 +24,24 @@
     <ClCompile Include="Warrior.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Priest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Warrior.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Priest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

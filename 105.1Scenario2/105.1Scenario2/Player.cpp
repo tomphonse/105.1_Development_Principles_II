@@ -64,6 +64,7 @@ std::string Player::whatRace() {
 	
 }
 
+
 std::string Player::getAttackStr() {
 	return attackStr;
 }

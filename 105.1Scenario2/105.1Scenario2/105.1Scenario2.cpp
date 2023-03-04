@@ -6,6 +6,8 @@
 #include <vector>
 #include "Player.h"
 #include "Warrior.h"
+#include "Priest.h"
+#include "Mage.h"
 
 
 bool correctInput;
@@ -13,6 +15,8 @@ bool finish = false;
 std::string userInput;
 
 std::vector<Warrior*> warriorList;
+std::vector<Priest*> priestList;
+std::vector<Mage*> mageList;
 
 enum SelectedClass {
     WARRIOR,
@@ -52,11 +56,11 @@ Player* getSelectedClass() {
         break;
 
     case PRIEST:
-
+        return priestList[priestList.size() - 1];
         break;
 
     case MAGE:
-
+        return mageList[mageList.size() - 1];
         break;
     }
 
@@ -87,28 +91,10 @@ Player* getSelectedClass() {
 
 int main()
 {
-    ////testing
-    //std::string meme;
-    //Player player("jeff",50,33, DWARF);
-
-
-
-    //
-    ///*while (1) {
-    //    std::cout << player.getName() << "\n";
-    //    std::cout << "HP: " << player.getHitPoints() << "\n";
-    //    std::cout << "MP: " << player.getMagicPoints() << "\n";
-    //    std::cout << "RACE: " << player.getRace();
-    //    std::cin >> meme;
-
-    //}*/
-
-
-
-
+  
     //main loop
     while (!finish) {
-
+        std::cout << "\n\n\n\n";
         //class selection
         correctInput = false;
         while (!correctInput) {
@@ -126,11 +112,13 @@ int main()
                     break;
 
                 case 2: //Priest
-
+                    priestList.push_back(new Priest);
+                    selectedClass = PRIEST;
                     break;
 
                 case 3: //Mage
-
+                    mageList.push_back(new Mage);
+                    selectedClass = MAGE;
                     break;
 
                 case 4: //Finish Creating Characters
@@ -144,6 +132,9 @@ int main()
                     break;
 
             }
+        }
+        if (finish) {
+            break;
         }
 
         std::cout << "\n\n\n";
@@ -196,14 +187,36 @@ int main()
 
     }
 
+    //character creation complete screen
+
+    //listing all warriors
     if (warriorList.size() > 0) {
         std::cout << "\n\n\n";
         std::cout << "\t\tWARRIORS LIST\n\n";
         for (int i = 0; i < warriorList.size(); i++) {
-
+            std::cout << "I am a " << warriorList[i]->whatRace() << " Warrior" << ", my name is " << warriorList[i]->getName() << " and " << warriorList[i]->getAttackStr() << "\n";
         }
     }
 
+    //listing all priests
+    if (priestList.size() > 0) {
+        std::cout << "\n\n\n";
+        std::cout << "\t\tPRIEST LIST\n\n";
+        for (int i = 0; i < priestList.size(); i++) {
+            std::cout << "I am a " << priestList[i]->whatRace() << " Priest, my name is " << priestList[i]->getName() << " and " << priestList[i]->getAttackStr() << "\n";
+        }
+    }
+
+    //listing all mages
+    if (mageList.size() > 0) {
+        std::cout << "\n\n\n";
+        std::cout << "\t\tMAGE LIST\n\n";
+        for (int i = 0; i < mageList.size(); i++) {
+            std::cout << "I am a " << mageList[i]->whatRace() << " Mage, my name is " << mageList[i]->getName() << " and " << mageList[i]->getAttackStr() << "\n";
+        }
+    }
+
+    std::cout << "\n\n\n\t\tCHARACTER CREATION COMPLETE!!!";
     
 }
 
