@@ -1,0 +1,6 @@
+﻿  105.1Scenario1.cpp
+  Location.cpp
+C:\Users\270243039\OneDrive - UP Education\Documents\GitHub\105.1_Development_Principles_II\105.1Scenario1\105.1Scenario1\Location.cpp(16,35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\270243039\OneDrive - UP Education\Documents\GitHub\105.1_Development_Principles_II\105.1Scenario1\105.1Scenario1\Location.cpp(28,35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
+  105.1Scenario1.vcxproj -> C:\Users\270243039\OneDrive - UP Education\Documents\GitHub\105.1_Development_Principles_II\105.1Scenario1\x64\Debug\105.1Scenario1.exe

@@ -2,10 +2,25 @@
 //
 
 #include <iostream>
+#include "Location.h"
+#include "Utils.h"
+
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Utils * utils = new Utils;
+    Location location(*utils);
+
+
+    location.get_pos();
+    std::cout << "\n\n\n";
+
+
+    location.display();
+
+    
+    
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
