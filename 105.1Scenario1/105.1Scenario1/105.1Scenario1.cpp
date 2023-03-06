@@ -2,28 +2,28 @@
 //
 
 #include <iostream>
+#include <vector>
 #include "Yacht.h"
-#include "Location.h"
-#include "Utils.h"
 
 
+std::vector<Yacht*> yachtList;
 
 int main()
 {
-    Utils * utils = new Utils;
-    Location location(*utils);
 
     for (int i = 1; i < 4; i++) {
-        new Yacht(i);
+        yachtList.push_back(new Yacht(i));
+        yachtList[i - 1]->getLocation().get_pos();
+        std::cout << "\n\n";
     }
 
-
-    location.get_pos();
-    std::cout << "\n\n\n";
-
-
-    location.display();
-
+    std::cout << "\n\n";
+    
+    for (int i = 0; i < yachtList.size(); i++) {
+        std::cout << "\nShip " << yachtList[i]->getYachtNum() << " Location: \n";
+        yachtList[i]->getLocation().display();
+        std::cout << "\n";
+    }
     
     
 }
