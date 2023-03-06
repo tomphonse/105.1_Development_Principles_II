@@ -40,7 +40,6 @@ void Location::get_pos() {
 	directionLatt = userInputChar(false);
 
 	latitude = std::to_string(degreesLatt) + '\xF8' + removeZeroes(minutesLatt) +' ' + directionLatt + " Latitude";
-	latitude = latitude;
 
 }
 
