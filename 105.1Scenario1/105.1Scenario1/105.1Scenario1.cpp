@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include "Yacht.h"
 #include "Location.h"
 #include "Utils.h"
 
@@ -11,6 +12,10 @@ int main()
 {
     Utils * utils = new Utils;
     Location location(*utils);
+
+    for (int i = 1; i < 4; i++) {
+        new Yacht(i);
+    }
 
 
     location.get_pos();

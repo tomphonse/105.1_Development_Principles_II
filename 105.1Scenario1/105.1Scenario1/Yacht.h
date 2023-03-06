@@ -5,6 +5,10 @@ private:
 	
 	int yachtNum;
 
+public:
+
+	Yacht(int yachtNum);
+
 
 };
 
