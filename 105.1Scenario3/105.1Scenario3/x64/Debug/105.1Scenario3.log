@@ -1,0 +1,4 @@
+﻿  Square.cpp
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\105.1Scenario3\Square.cpp(16,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\105.1Scenario3\Square.cpp(62,15): warning C4129: 'P': unrecognized character escape sequence
+  105.1Scenario3.vcxproj -> F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\x64\Debug\105.1Scenario3.exe

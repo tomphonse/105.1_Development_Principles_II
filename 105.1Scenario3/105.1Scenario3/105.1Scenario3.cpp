@@ -2,19 +2,58 @@
 //
 
 #include <iostream>
+#include <string>
+#include "Utils.h"
+#include "Shapes.h"
+#include "Square.h"
+
+bool finish = false;
+Utils utils;
+Square square;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    
+    while(!finish) {
+
+        std::cout << "\n\n\nSHAPES CALCULATOR\n\n";
+        std::cout << "1. Square\n";
+        std::cout << "2. Rectangle\n";
+        std::cout << "3. Triangle\n";
+        std::cout << "4. Circle\n";
+        std::cout << "5. Exit\n";
+
+        switch (int i = utils.enterInput(5)) {
+
+        case 1: //square
+
+            square.menu();
+
+            break;
+
+        case 2: //rectangle
+
+            break;
+
+        case 3: //triangle
+
+            break;
+
+        case 4: //circle 
+
+            break;
+
+        case 5: //exit
+
+            break;
+
+        default: 
+
+            break;
+        }
+    }
+
+
+
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
