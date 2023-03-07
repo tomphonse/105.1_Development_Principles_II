@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="105.1Scenario1 Main&#xD;&#xA;&#xD;&#xA;yachtList : vector&lt;Yacht*&gt;">
+    <Position X="1.992" Y="2.058" Height="0.808" Width="2.258" />
+  </Comment>
+  <Class Name="Location">
+    <Position X="5" Y="2" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>QIAAQAAAAAAAAAAIAAIAAEJACAEAABAAAAAAAEAAAEA=</HashCode>
+      <FileName>Location.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Yacht">
+    <Position X="8.5" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAIAAAAAAAAAAAAAAAAAAABCAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Yacht.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Utils">
+    <Position X="11.25" Y="2" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAgAIAAAAAAAACAAAAAAQAAAAAABAAAA=</HashCode>
+      <FileName>Utils.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

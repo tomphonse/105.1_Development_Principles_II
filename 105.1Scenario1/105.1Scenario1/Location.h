@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include "Utils.h"
 
 class Location
 {
@@ -18,14 +19,12 @@ private:
 	char directionLatt;	
 	std::string latitude = "";
 
-	//utility vars
-	std::string userInput;
-	const std::string validChars = "NnEeSsWw"; //North East South West
-	const std::string validCharsLong = "EeWw"; //East West
-	const std::string validCharsLatt = "NnSs"; //North South
-
 	//yacht vars
 	int yachtNum;
+
+	//utils
+	Utils utils;
+
 	
 public:
 
@@ -33,14 +32,11 @@ public:
 	Location();
 	Location(int yachtNum);
 
-	//getter & settter
+	//settter
 	void get_pos();
+	
+	//couts the longitude and latitude
 	void display();
-
-	//utility funcs
-	float userInputNum(int minNum, int maxNum);
-	char userInputChar(bool isLong);
-	std::string removeZeroes(float f);
 
 
 };
