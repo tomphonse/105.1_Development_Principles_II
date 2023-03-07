@@ -1,42 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="105.1Scenrario2&#xD;&#xA;&#xD;&#xA;correctInput: bool&#xD;&#xA;finish: bool&#xD;&#xA;userInput: string&#xD;&#xA;&#xD;&#xA;warriorList: vector&lt;Warrior*&gt;&#xD;&#xA;priestList: vector&lt;Priest*&gt;&#xD;&#xA;mageList: vector&lt;Mage*&gt;&#xD;&#xA;&#xD;&#xA;selectedClass: SelectedClass(ENUM)&#xD;&#xA;&#xD;&#xA;EnterInput(int maxNum): int&#xD;&#xA;&#xD;&#xA;getSelectedClass(): Player*&#xD;&#xA;&#xD;&#xA;">
+    <Position X="3.558" Y="0.5" Height="3.2" Width="2.25" />
+  </Comment>
   <Class Name="Mage">
-    <Position X="6.25" Y="2.75" Width="1.5" />
+    <Position X="7.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAIAAAA=</HashCode>
       <FileName>Mage.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Player">
-    <Position X="8.5" Y="1.5" Width="4" />
+    <Position X="8.5" Y="1" Width="4" />
     <TypeIdentifier>
-      <HashCode>AAgAgEAAAABBAAAEgAAAAABAAAAEAADAABgEBQAQAAQ=</HashCode>
+      <HashCode>AAgAgEAAAABAAAAEgAAAAABAAAAEAADAAAgEBQAAAAQ=</HashCode>
       <FileName>Player.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Priest">
-    <Position X="8.25" Y="6.75" Width="1.5" />
+    <Position X="9.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAAAAAAAA=</HashCode>
       <FileName>Priest.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Warrior">
-    <Position X="13.25" Y="3.5" Width="1.5" />
+    <Position X="11.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
       <FileName>Warrior.h</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="SelectedClass">
-    <Position X="3.25" Y="2.5" Width="1.5" />
+    <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAEAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>105.1Scenario2.cpp</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="Race">
-    <Position X="13.25" Y="1.5" Width="1.5" />
+    <Position X="13.25" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAACEAAAAAAAAAAABAAAAAIAAAAAAAAAAACAAA=</HashCode>
       <FileName>Player.h</FileName>

@@ -3,6 +3,7 @@
 
 //constructor
 Player::Player() {};
+
 Player::Player(std::string name, int hitPoints, int magicPoints, Race race) {
 	this->name = name;
 	this->hitPoints = hitPoints;
@@ -11,8 +12,8 @@ Player::Player(std::string name, int hitPoints, int magicPoints, Race race) {
 
 }
 
-void Player::attack() {
-	std::cout << getAttackStr();
+std::string Player::attack() {
+	return "No attack defined yet";
 }
 
 //getters
@@ -32,7 +33,7 @@ Race Player::getRace() {
 	return race;
 }
 
-std::string Player::whatRace() {
+std::string Player::whatRace() { //returns race name string from getRace() enum getter
 
 	switch (getRace()) {
 	
@@ -64,11 +65,6 @@ std::string Player::whatRace() {
 	
 }
 
-
-std::string Player::getAttackStr() {
-	return attackStr;
-}
-
 //setters
 void Player::setName(std::string name) {
 	this->name = name;
@@ -84,10 +80,6 @@ void Player::setMagicPoints(int magicPoints) {
 
 void Player::setRace(Race race) {
 	this->race = race;
-}
-
-void Player::setAttackStr(std::string attackStr) {
-	this->attackStr = attackStr;
 }
 
 

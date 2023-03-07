@@ -3,5 +3,10 @@
 Priest::Priest() {
 	setHitPoints(100);
 	setMagicPoints(200);
-	setAttackStr("I will assault you with holy wrath!");
+}
+
+std::string Priest::attack() {
+
+	return "I will assault you with holy wrath!";
+
 }

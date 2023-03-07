@@ -3,6 +3,11 @@
 class Mage : public Player
 {
 public:
+
+	//constructor
 	Mage();
+
+
+	std::string attack();
 };
 

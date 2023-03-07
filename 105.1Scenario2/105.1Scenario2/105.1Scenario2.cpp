@@ -10,14 +10,16 @@
 #include "Mage.h"
 
 
-bool correctInput;
-bool finish = false;
-std::string userInput;
+bool correctInput; //used for inner loops for each character creation section
+bool finish = false; //exits main program loop upon true
+std::string userInput; //holds user input
 
+//vectors for each character seperated by class
 std::vector<Warrior*> warriorList;
 std::vector<Priest*> priestList;
 std::vector<Mage*> mageList;
 
+//enum to see what the currently selectd class is
 enum SelectedClass {
     WARRIOR,
     PRIEST,
@@ -26,7 +28,7 @@ enum SelectedClass {
 
 SelectedClass selectedClass;
 
-
+//to get the user's input and check if its valid
 int EnterInput(int maxNum) {
     
     correctInput = false;
@@ -34,7 +36,7 @@ int EnterInput(int maxNum) {
     std::cout << "\n\tEnter Input: ";
     std::cin >> userInput;
 
-    try {
+    try { //try catch to stop program from crashing if input is not an int
         if (std::stoi(userInput) <= maxNum && std::stoi(userInput) > 0) {
             correctInput = true;
             return std::stoi(userInput);
@@ -48,7 +50,7 @@ int EnterInput(int maxNum) {
 }
 
 
-
+//returns the selected class instance we are editing throughout the chracter creation process
 Player* getSelectedClass() {
     switch (selectedClass) {
     case WARRIOR:
@@ -75,7 +77,7 @@ int main()
         std::cout << "\n\n\n\n";
         //class selection
         correctInput = false;
-        while (!correctInput) {
+        while (!correctInput) { //loops until acceptable output from EnterInput()
             std::cout << "\tCHARACTER CREATION\n";
             std::cout << "\t\tWhich of the following would you like to create?\n";
             std::cout << "\t1. Create a Warrior!\n";
@@ -83,7 +85,7 @@ int main()
             std::cout << "\t3. Create a Mage!\n";
             std::cout << "\t4. Finish creating characters.\n";
             
-            switch(EnterInput(4)) {
+            switch(EnterInput(4)) { //creating new class instance and sets the selected class
                 case 1: //warrior
                     warriorList.push_back(new Warrior);
                     selectedClass = WARRIOR;
@@ -111,7 +113,7 @@ int main()
 
             }
         }
-        if (finish) {
+        if (finish) { //breaks main loop 
             break;
         }
 
@@ -119,7 +121,7 @@ int main()
 
         //Race Selection
         correctInput = false;
-        while (!correctInput) {
+        while (!correctInput) { //loops until acceptable output from EnterInput()
             std::cout << "\tSELECT RACE\n";
             std::cout << "\t1. Human\n";
             std::cout << "\t2. Elf\n";
@@ -127,7 +129,7 @@ int main()
             std::cout << "\t4. Orc\n";
             std::cout << "\t5. Troll\n";
 
-            switch (EnterInput(5)) {
+            switch (EnterInput(5)) { //sets race for selected class from getSelectedClass()
                 
             case 1: //Human
                 getSelectedClass()->setRace(HUMAN);
@@ -166,13 +168,13 @@ int main()
     }
 
     //character creation complete screen
-
+    //loops through character class vectors displaying their variables 
     //listing all warriors
     if (warriorList.size() > 0) {
         std::cout << "\n\n\n";
         std::cout << "\t\tWARRIORS LIST\n\n";
         for (int i = 0; i < warriorList.size(); i++) {
-            std::cout << "I am a " << warriorList[i]->whatRace() << " Warrior, my name is " << warriorList[i]->getName() << " and " << warriorList[i]->getAttackStr() << "\n";
+            std::cout << "I am a " << warriorList[i]->whatRace() << " Warrior, my name is " << warriorList[i]->getName() << " and " << warriorList[i]->attack() << "\n";
         }
     }
 
@@ -181,7 +183,7 @@ int main()
         std::cout << "\n\n\n";
         std::cout << "\t\tPRIEST LIST\n\n";
         for (int i = 0; i < priestList.size(); i++) {
-            std::cout << "I am a " << priestList[i]->whatRace() << " Priest, my name is " << priestList[i]->getName() << " and " << priestList[i]->getAttackStr() << "\n";
+            std::cout << "I am a " << priestList[i]->whatRace() << " Priest, my name is " << priestList[i]->getName() << " and " << priestList[i]->attack() << "\n";
         }
     }
 
@@ -190,21 +192,10 @@ int main()
         std::cout << "\n\n\n";
         std::cout << "\t\tMAGE LIST\n\n";
         for (int i = 0; i < mageList.size(); i++) {
-            std::cout << "I am a " << mageList[i]->whatRace() << " Mage, my name is " << mageList[i]->getName() << " and " << mageList[i]->getAttackStr() << "\n";
+            std::cout << "I am a " << mageList[i]->whatRace() << " Mage, my name is " << mageList[i]->getName() << " and " << mageList[i]->attack() << "\n";
         }
     }
 
     std::cout << "\n\n\n\t\tCHARACTER CREATION COMPLETE!!!";
     
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

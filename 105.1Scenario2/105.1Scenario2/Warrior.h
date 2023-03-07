@@ -4,6 +4,10 @@ class Warrior : public Player
 {
 
 public:
+	
 	Warrior();
+
+	std::string attack();
+
 };
 

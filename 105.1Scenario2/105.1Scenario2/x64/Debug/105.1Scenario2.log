@@ -1,4 +1,1 @@
-﻿  105.1Scenario2.cpp
-F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario2\105.1Scenario2\105.1Scenario2.cpp(67): warning C4715: 'getSelectedClass': not all control paths return a value
-F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario2\105.1Scenario2\105.1Scenario2.cpp(48): warning C4715: 'EnterInput': not all control paths return a value
-  105.1Scenario2.vcxproj -> F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario2\x64\Debug\105.1Scenario2.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(411,5): error MSB8020: The build tools for v143 (Platform Toolset = 'v143') cannot be found. To build using the v143 build tools, please install v143 build tools.  Alternatively, you may upgrade to the current Visual Studio tools by selecting the Project menu or right-click the solution, and then selecting "Retarget solution".
