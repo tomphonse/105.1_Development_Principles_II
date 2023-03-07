@@ -6,15 +6,17 @@
 #include "Utils.h"
 #include "Shapes.h"
 #include "Square.h"
+#include "Rectangle.h"
+#include "Triangle.h"
+#include "Circle.h"
 
-bool finish = false;
 Utils utils;
-Square square;
+Shapes* shapeList[4] = { new Square, new Rectangle, new Triangle, new Circle };
 
 int main()
 {
     
-    while(!finish) {
+    while(1) {
 
         std::cout << "\n\n\nSHAPES CALCULATOR\n\n";
         std::cout << "1. Square\n";
@@ -23,37 +25,14 @@ int main()
         std::cout << "4. Circle\n";
         std::cout << "5. Exit\n";
 
-        switch (int i = utils.enterInput(5)) {
+        int userInput = utils.enterInput(5);
 
-        case 1: //square
-
-            square.menu();
-
-            break;
-
-        case 2: //rectangle
-
-            break;
-
-        case 3: //triangle
-
-            break;
-
-        case 4: //circle 
-
-            break;
-
-        case 5: //exit
-
-            break;
-
-        default: 
-
+        if (userInput == 5) { //exit
             break;
         }
+        else {
+            shapeList[userInput - 1]->menu();
+        }
     }
-
-
-
 }
 
