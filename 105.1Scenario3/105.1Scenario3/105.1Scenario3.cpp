@@ -11,13 +11,14 @@
 #include "Circle.h"
 
 Utils utils;
-Shapes* shapeList[4] = { new Square, new Rectangle, new Triangle, new Circle };
+Shapes* shapeList[4] = { new Square, new Rectangle, new Triangle, new Circle }; //creating and storing all possible shapes in an array that we can call elements of inside of our main menu
 
 int main()
 {
-    
+    //main program loop
     while(1) {
 
+        //main menu
         std::cout << "\n\n\nSHAPES CALCULATOR\n\n";
         std::cout << "1. Square\n";
         std::cout << "2. Rectangle\n";
@@ -25,13 +26,13 @@ int main()
         std::cout << "4. Circle\n";
         std::cout << "5. Exit\n";
 
-        int userInput = utils.enterInput(5);
+        int userInput = utils.enterInput(5); //gets user's input with validity check and stores it
 
-        if (userInput == 5) { //exit
+        if (userInput == 5) { //exits program if exit selected
             break;
         }
         else {
-            shapeList[userInput - 1]->menu();
+            shapeList[userInput - 1]->menu(); //selects derived shape from array using corresponding user input and runs overidden menu function
         }
     }
 }

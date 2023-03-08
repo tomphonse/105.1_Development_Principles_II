@@ -1,28 +1,28 @@
 #include "Utils.h"
 
-
+//to get the user's input and check if its valid
 float Utils::enterInput(int maxNum) {
 
-    while (1) {
+    while (1) { //loop until acceptable input
         std::cout << "\n\tEnter Input: ";
         std::cin >> userInput;
 
-        try { //try catch to stop program from crashing if input is not an int
-            if (std::stof(userInput) > 0 && std::stof(userInput) <= maxNum) {
-                return std::stof(userInput);
+        try { //try catch to stop program from crashing if input is not a float
+            if (std::stof(userInput) > 0 && std::stof(userInput) <= maxNum) { //checking if user's input is between zero and the maximum accepted value
+                return std::stof(userInput); //returning user's input as float if acceptable
             }
 
-            else if (std::stof(userInput) > 0 && maxNum == 0) {
-                return std::stof(userInput);
+            else if (std::stof(userInput) > 0 && maxNum == 0) { //if maxNum set to 0 there is no upper limit
+                return std::stof(userInput); //returning user's input as float if acceptable
             }
 
-            else {
+            else { //wrong input
                 std::cout << "\nPlease enter a correct input...\n\n";
 
             }
 
         }
-        catch (...) {
+        catch (...) { //wrong input
             std::cout << "\nPlease enter a correct input...\n\n";
         }
     }
