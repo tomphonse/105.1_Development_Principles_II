@@ -1,31 +1,39 @@
-#pragma once
-class Alien
-{
+#include <iostream>
+
+class Alien {
+
 private:
-	int instanceNum;
-	float weight;
+
 	float height;
+	float weight;
 	bool isFemale;
-	float prestige;
+	char sex;
+	int prestige;
 
 public:
+	//Alien();
+	Alien(float weight, float height, bool isFemale);
+	
 
-	//constructor
-	Alien();
 
 	//getters
-	int getInstanceNum();
-	float getWeight();
 	float getHeight();
-	bool getSex();
-	float getPrestige();
+	float getWeight();
+	bool getIsFemale();
+	int getPrestige();
+	char getSex();
 
-	//setters
-	void setInstanceNum(int instanceNum);
-	void setWeight(float weight);
-	void setHeight(float height);
-	void setSex(bool isFemale);
-	void setPrestige();
+
+	//operator overloads
+	Alien operator+(const Alien& alien); //breeding
+
+	//comparing prestige
+	bool operator==(const Alien& alien); //isEqual?
+	bool operator!=(const Alien& alien); //!isEqual
+	bool operator>(const Alien& alien); //greaterThan
+	bool operator>=(const Alien& alien); //greaterThan or Equal
+	bool operator<(const Alien& alien); //lessThan
+	bool operator<=(const Alien& alien); //lessthan or equal
+
 
 };
-

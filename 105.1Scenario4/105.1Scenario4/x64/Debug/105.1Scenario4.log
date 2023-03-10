@@ -1,0 +1,6 @@
+﻿  105.1Scenario4.cpp
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario4\105.1Scenario4\105.1Scenario4.cpp(6,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario4\105.1Scenario4\105.1Scenario4.cpp(7,31): warning C4305: 'argument': truncation from 'double' to 'float'
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario4\105.1Scenario4\105.1Scenario4.cpp(12,30): warning C4305: 'argument': truncation from 'double' to 'float'
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario4\105.1Scenario4\105.1Scenario4.cpp(13,28): warning C4305: 'argument': truncation from 'double' to 'float'
+  105.1Scenario4.vcxproj -> F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario4\x64\Debug\105.1Scenario4.exe
