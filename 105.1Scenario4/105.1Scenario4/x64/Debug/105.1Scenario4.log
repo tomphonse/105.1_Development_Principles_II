@@ -1,6 +1,7 @@
 ﻿  105.1Scenario4.cpp
-F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario4\105.1Scenario4\105.1Scenario4.cpp(6,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario4\105.1Scenario4\105.1Scenario4.cpp(7,31): warning C4305: 'argument': truncation from 'double' to 'float'
-F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario4\105.1Scenario4\105.1Scenario4.cpp(12,30): warning C4305: 'argument': truncation from 'double' to 'float'
-F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario4\105.1Scenario4\105.1Scenario4.cpp(13,28): warning C4305: 'argument': truncation from 'double' to 'float'
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario4\105.1Scenario4\105.1Scenario4.cpp(21,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario4\105.1Scenario4\105.1Scenario4.cpp(62,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario4\105.1Scenario4\105.1Scenario4.cpp(71,49): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario4\105.1Scenario4\105.1Scenario4.cpp(121,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario4\105.1Scenario4\105.1Scenario4.cpp(130,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   105.1Scenario4.vcxproj -> F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario4\x64\Debug\105.1Scenario4.exe

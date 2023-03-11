@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Utils.h"
 
 class Alien {
 
@@ -9,9 +10,12 @@ private:
 	bool isFemale;
 	char sex;
 	int prestige;
+	std::string name;
+	Utils utils;
 
 public:
-	//Alien();
+	
+	Alien();
 	Alien(float weight, float height, bool isFemale);
 	
 
@@ -22,6 +26,10 @@ public:
 	bool getIsFemale();
 	int getPrestige();
 	char getSex();
+	std::string getName();
+
+	std::string showStats();
+
 
 
 	//operator overloads

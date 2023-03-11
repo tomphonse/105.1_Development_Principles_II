@@ -2,6 +2,8 @@
 
 
 //constructors 
+
+Alien::Alien() {}
 Alien::Alien(float weight, float height, bool isFemale) {
 
 	this->weight = weight;
@@ -18,6 +20,9 @@ Alien::Alien(float weight, float height, bool isFemale) {
 	else {
 		sex = 'M';
 	}
+
+	//select Random Name
+	name = utils.getRandomName();
 
 }
 
@@ -42,6 +47,14 @@ int Alien::getPrestige() {
 char Alien::getSex() {
 	return sex;
 }
+std::string Alien::getName() {
+	return name;
+}
+
+std::string Alien::showStats() {
+
+	return "NAME: " + name + " | HEIGHT: " + utils.setPrecision(height, 1) + "ft | WEIGHT: " + utils.setPrecision(weight, 2) + "kg | SEX: " + sex + " | PRESTIGE: " + std::to_string(prestige);
+}
 
 
 //operator overloads
@@ -51,8 +64,10 @@ Alien Alien::operator+(const Alien& alien) { //breeding
 	int tempHeight = (this->height + alien.height) / 2;
 	bool tempIsFemale = rand() % 2;*/
 
-	return Alien((this->weight + alien.weight) / 2, (this->height + alien.height) / 2, rand() % 2);
-
+	Alien alienSpawn((this->weight + alien.weight) / 2, (this->height + alien.height) / 2, rand() % 2);
+	alienSpawn.name = alienSpawn.name + "-" + alien.name;
+	
+	return alienSpawn;
 }
 
 //prestige compare
