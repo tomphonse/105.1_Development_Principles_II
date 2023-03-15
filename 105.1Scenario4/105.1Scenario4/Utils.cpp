@@ -67,7 +67,7 @@ std::string Utils::getRandomName() {
 
     bool usePrefix = rand() % 2;
     bool useSuffix = rand() % 2;
-    int nameLength = rand() % 5 + 3; //choosing a random number of letters between 3 and 7 (one in 20 chance of adding more characters per nameLength check for loop below for details_
+    int nameLength = rand() % 5 + 3; //choosing a random number of letters between 3 and 7 (Probability of adding more characters: P(X = i) = (19/20)^(i-1) * (1/20) + (19/20)^(i) )
     
 
     if (usePrefix) { //adding a prefix
@@ -75,7 +75,7 @@ std::string Utils::getRandomName() {
     }
 
     for (int i = 0; i <= nameLength; i++) { //loop generating the main part of the name
-        
+        addAnother:
         if (i % 2 == 0) { //if even add a consonant
             name = name + consonants[rand() % sizeof(consonants) / sizeof(consonants[0])];
         }
@@ -83,13 +83,8 @@ std::string Utils::getRandomName() {
             name = name + vowels[rand() % sizeof(vowels) / sizeof(vowels[0])];
         }
 
-        if (rand() % 20 == 10) { //one in 20 chance of adding another vowel or odd
-            if (i % 2 != 0) {
-                name = name + consonants[rand() % sizeof(consonants) / sizeof(consonants[0])];
-            }
-            else {
-                name = name + vowels[rand() % sizeof(vowels) / sizeof(vowels[0])];
-            }
+        if (rand() % 20 == 10) { //P(X = i) = (19/20)^(i-1) * (1/20) + (19/20)^(i) 
+            goto addAnother;
         }
     }
     

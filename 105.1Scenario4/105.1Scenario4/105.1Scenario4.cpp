@@ -136,12 +136,12 @@ int main() {
 				std::cout << "Alien 1: " << alienCompareContainer[0]->showStats() << "\n";
 				std::cout << "Alien 2: " << alienCompareContainer[1]->showStats() << "\n\n";
 
-				std::cout << "Alien 1 == Alien 2: " << (alienCompareContainer[0] == alienCompareContainer[1]) << "\n";
-				std::cout << "Alien 1 != Alien 2: " << (alienCompareContainer[0] != alienCompareContainer[1]) << "\n";
-				std::cout << "Alien 1 > Alien 2: " << (alienCompareContainer[0] > alienCompareContainer[1]) << "\n";
-				std::cout << "Alien 1 >= Alien 2: " << (alienCompareContainer[0] >= alienCompareContainer[1]) << "\n";
-				std::cout << "Alien 1 < Alien 2: " << (alienCompareContainer[0] < alienCompareContainer[1]) << "\n";
-				std::cout << "Alien 1 <= Alien 2: " << (alienCompareContainer[0] <= alienCompareContainer[1]) << "\n\n";
+				std::cout << "Alien 1 == Alien 2: " << utils.boolStr((alienCompareContainer[0] == alienCompareContainer[1])) << "\n";
+				std::cout << "Alien 1 != Alien 2: " << utils.boolStr((alienCompareContainer[0] != alienCompareContainer[1])) << "\n";
+				std::cout << "Alien 1 > Alien 2: " << utils.boolStr((alienCompareContainer[0] > alienCompareContainer[1])) << "\n";
+				std::cout << "Alien 1 >= Alien 2: " << utils.boolStr((alienCompareContainer[0] >= alienCompareContainer[1])) << "\n";
+				std::cout << "Alien 1 < Alien 2: " << utils.boolStr((alienCompareContainer[0] < alienCompareContainer[1])) << "\n";
+				std::cout << "Alien 1 <= Alien 2: " << utils.boolStr((alienCompareContainer[0] <= alienCompareContainer[1])) << "\n\n";
 
 				//menu
 				std::cout << "1.Compare another pair of aliens?\n";

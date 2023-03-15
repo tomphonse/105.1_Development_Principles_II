@@ -60,9 +60,6 @@ std::string Alien::showStats() {
 //operator overloads
 Alien Alien::operator+(const Alien& alien) { //breeding
 	
-	/*int tempWeight = (this->weight + alien.weight) / 2;
-	int tempHeight = (this->height + alien.height) / 2;
-	bool tempIsFemale = rand() % 2;*/
 
 	Alien alienSpawn((this->weight + alien.weight) / 2, (this->height + alien.height) / 2, rand() % 2);
 	alienSpawn.name = alienSpawn.name + "-" + alien.name;
