@@ -3,9 +3,11 @@
 
 //constructors 
 
-Alien::Alien() {}
-Alien::Alien(float weight, float height, bool isFemale) {
+Alien::Alien() {} //default constructor
 
+Alien::Alien(float weight, float height, bool isFemale) { //constructor with params
+
+	//assign param vars
 	this->weight = weight;
 	this->height = height;
 	this->isFemale = isFemale;
@@ -22,7 +24,7 @@ Alien::Alien(float weight, float height, bool isFemale) {
 	}
 
 	//select Random Name
-	name = utils.getRandomName();
+	name = utils::getRandomName();
 
 }
 
@@ -51,9 +53,11 @@ std::string Alien::getName() {
 	return name;
 }
 
-std::string Alien::showStats() {
+std::string Alien::showStats() { 
 
-	return "NAME: " + name + " | HEIGHT: " + utils.setPrecision(height, 1) + "ft | WEIGHT: " + utils.setPrecision(weight, 2) + "kg | SEX: " + sex + " | PRESTIGE: " + std::to_string(prestige);
+	return "NAME: " + name + " | HEIGHT: " + 
+		utils::setPrecision(height, 1) + "ft | WEIGHT: " + utils::setPrecision(weight, 2) + 
+		"kg | SEX: " + sex + " | PRESTIGE: " + std::to_string(prestige);
 }
 
 

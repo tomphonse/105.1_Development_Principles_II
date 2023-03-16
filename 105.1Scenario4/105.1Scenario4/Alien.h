@@ -5,18 +5,18 @@ class Alien {
 
 private:
 
-	float height;
-	float weight;
-	bool isFemale;
-	char sex;
-	int prestige;
-	std::string name;
-	Utils utils;
+	float height; //height as feet
+	float weight; //weight as kgs
+	bool isFemale; //bool for sex used for logic
+	char sex; //char for sex used for console output
+	int prestige; //prestige calculated from previous vars
+	std::string name; //display name
 
 public:
 	
-	Alien();
-	Alien(float weight, float height, bool isFemale);
+	//constructor
+	Alien(); //default constructor
+	Alien(float weight, float height, bool isFemale); //constructor with params
 	
 
 
@@ -28,7 +28,7 @@ public:
 	char getSex();
 	std::string getName();
 
-	std::string showStats();
+	std::string showStats(); //gives back string of all stats for console output
 
 
 

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="105.1 Scenario4 Main&#xD;&#xA;&#xD;&#xA;alienMen : std::vector&lt;Alien*&gt;&#xD;&#xA;alienWomen : std::vector&lt;Alien*&gt;&#xD;&#xA;alienBreedingContainer : Alien[2]*&#xD;&#xA;alienCompareContainer : Alien[2]*&#xD;&#xA;child : Alien*&#xD;&#xA;&#xD;&#xA;finish : bool &#xD;&#xA;userInput : int&#xD;&#xA;&#xD;&#xA;">
+    <Position X="2.954" Y="2.5" Height="2.681" Width="2.496" />
+  </Comment>
+  <Comment CommentText="namespace utils&#xD;&#xA;&#xD;&#xA;enterInput(int maxNum) : int&#xD;&#xA;boolStr(bool boolean) : std::string&#xD;&#xA;getRandomFloat(float min, float max) : float&#xD;&#xA;getRandomName() : std::string&#xD;&#xA;setPrecision(float f, int precision) : std::string">
+    <Position X="9.935" Y="2.75" Height="1.75" Width="2.756" />
+  </Comment>
+  <Class Name="Alien">
+    <Position X="6.25" Y="2" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAwAAAQAAQAAAAgEQAAwAgokAAAAAAA=</HashCode>
+      <FileName>Alien.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
