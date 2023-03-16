@@ -14,7 +14,7 @@ void Triangle::menu() {
 		std::cout << "2. Perimeter (Perimeter = side1 + side2 + side3 sq.units)\n";
 		std::cout << "3. Exit (Go back to main menu)\n";
 
-		switch (int i = getUtils().enterInput(3)) { //gets user's input and selects corresponding function with selected menu option or exits if 3
+		switch (int i = utils::enterInput(3)) { //gets user's input and selects corresponding function with selected menu option or exits if 3
 
 		case 1: //area
 			calculateArea();
@@ -59,9 +59,9 @@ void Triangle::calculateArea() {
 
 	std::cout << "\n\nAREA\n";
 	std::cout << "Please enter the base of the triangle in centimeters: ";
-	float base = getUtils().enterInput(0); //get user input
+	float base = utils::enterInput(0); //get user input
 	std::cout << "Please enter the height of the triangle in centimeters: ";
-	float height = getUtils().enterInput(0); //get user input
+	float height = utils::enterInput(0); //get user input
 
 	float area = (base * height) / 2; //calculating result
 
@@ -69,7 +69,7 @@ void Triangle::calculateArea() {
 
 	//confirmation input
 	std::cout << "Enter 1 to go back: ";
-	getUtils().enterInput(1);
+	utils::enterInput(1);
 
 }
 
@@ -78,11 +78,11 @@ void Triangle::calculatePerimeter() {
 
 	std::cout << "\n\PERIMETER\n";
 	std::cout << "Please enter side 1 of the triangle in centimeters: ";
-	float side1 = getUtils().enterInput(0); //get user input
+	float side1 = utils::enterInput(0); //get user input
 	std::cout << "Please enter side 2 of the triangle in centimeters: ";
-	float side2 = getUtils().enterInput(0); //get user input
+	float side2 = utils::enterInput(0); //get user input
 	std::cout << "Please enter side 3 of the triangle in centimeters: ";
-	float side3 = getUtils().enterInput(0); //get user input
+	float side3 = utils::enterInput(0); //get user input
 
 	float perimeter = side1 + side2 + side3; //calculates result
 
@@ -90,6 +90,6 @@ void Triangle::calculatePerimeter() {
 
 	//confirmation input
 	std::cout << "Enter 1 to go back: ";
-	getUtils().enterInput(1);
+	utils::enterInput(1);
 
 }

@@ -17,7 +17,7 @@ void Rectangle::menu() {
 		std::cout << "2. Perimeter (Perimeter = 2 * (base + height) sq.units)\n";
 		std::cout << "3. Exit (Go back to main menu)\n";
 
-		switch (int i = getUtils().enterInput(3)) { //gets user's input and selects corresponding function with selected menu option or exits if 3
+		switch (int i = utils::enterInput(3)) { //gets user's input and selects corresponding function with selected menu option or exits if 3
 
 		case 1: //area
 			calculateArea();
@@ -53,9 +53,9 @@ void Rectangle::calculateArea() {
 
 	std::cout << "\n\nAREA\n";
 	std::cout << "Please enter the base of the rectangle in centimeters: ";
-	float base = getUtils().enterInput(0); //getting user input
+	float base = utils::enterInput(0); //getting user input
 	std::cout << "Please enter the height of the rectangle in centimeters: ";
-	float height = getUtils().enterInput(0); //getting user input
+	float height = utils::enterInput(0); //getting user input
 	
 	float area = base * height; //calculating result
 
@@ -63,7 +63,7 @@ void Rectangle::calculateArea() {
 
 	//confirmation input
 	std::cout << "Enter 1 to go back: ";
-	getUtils().enterInput(1);
+	utils::enterInput(1);
 
 }
 
@@ -72,9 +72,9 @@ void Rectangle::calculatePerimeter() {
 
 	std::cout << "\n\PERIMETER\n";
 	std::cout << "Please enter the base of the rectangle in centimeters: ";
-	float base = getUtils().enterInput(0); //getting user unput
+	float base = utils::enterInput(0); //getting user unput
 	std::cout << "Please enter the height of the rectangle in centimeters: ";
-	float height = getUtils().enterInput(0); //getting user input
+	float height = utils::enterInput(0); //getting user input
 	
 	float perimeter = 2 * (base + height); //calculating result
 
@@ -82,6 +82,6 @@ void Rectangle::calculatePerimeter() {
 
 	//confirmation input
 	std::cout << "Enter 1 to go back: ";
-	getUtils().enterInput(1);
+	utils::enterInput(1);
 
 }

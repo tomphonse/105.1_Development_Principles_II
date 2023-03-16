@@ -1,3 +1,20 @@
 ﻿  105.1Scenario3.cpp
-F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\105.1Scenario3\105.1Scenario3.cpp(28,23): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\105.1Scenario3\105.1Scenario3.cpp(29,23): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Circle.cpp
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\105.1Scenario3\Circle.cpp(17,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\105.1Scenario3\Circle.cpp(71,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\105.1Scenario3\Circle.cpp(84,15): warning C4129: 'P': unrecognized character escape sequence
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\105.1Scenario3\Circle.cpp(88,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Rectangle.cpp
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\105.1Scenario3\Rectangle.cpp(20,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\105.1Scenario3\Rectangle.cpp(73,15): warning C4129: 'P': unrecognized character escape sequence
+  Shapes.cpp
+  Square.cpp
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\105.1Scenario3\Square.cpp(19,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\105.1Scenario3\Square.cpp(70,15): warning C4129: 'P': unrecognized character escape sequence
+  Triangle.cpp
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\105.1Scenario3\Triangle.cpp(17,17): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\105.1Scenario3\Triangle.cpp(79,15): warning C4129: 'P': unrecognized character escape sequence
+  Utils.cpp
+  Generating Code...
   105.1Scenario3.vcxproj -> F:\HorsburghEstate\Schoolwork\105.1_Development_Principles_II\105.1Scenario3\x64\Debug\105.1Scenario3.exe

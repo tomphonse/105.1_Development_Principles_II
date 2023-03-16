@@ -10,7 +10,7 @@
 #include "Triangle.h"
 #include "Circle.h"
 
-Utils utils;
+
 Shapes* shapeList[4] = { new Square, new Rectangle, new Triangle, new Circle }; //creating and storing all possible shapes in an array that we can call elements of inside of our main menu
 
 int main()
@@ -26,7 +26,7 @@ int main()
         std::cout << "4. Circle\n";
         std::cout << "5. Exit\n";
 
-        int userInput = utils.enterInput(5); //gets user's input with validity check and stores it
+        int userInput = utils::enterInput(5); //gets user's input with validity check and stores it
 
         if (userInput == 5) { //exits program if exit selected
             break;

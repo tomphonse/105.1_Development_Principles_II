@@ -20,7 +20,7 @@
   <Class Name="Shapes">
     <Position X="6.25" Y="1.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>QAAAAAACAAAAAABAAAAAAAgAAAAAAAAAAIAAAAAQAAA=</HashCode>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAgAAAAAAAAAAIAAAAAQAAA=</HashCode>
       <FileName>Shapes.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -36,13 +36,6 @@
     <TypeIdentifier>
       <HashCode>AAAAAAACAAAAAAAAAAAAAAgAAAAAAAAAAIAAAAAQAAA=</HashCode>
       <FileName>Triangle.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Utils">
-    <Position X="8.75" Y="1.5" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
-      <FileName>Utils.h</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

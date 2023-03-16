@@ -14,7 +14,7 @@ void Circle::menu() {
 		std::cout << "2. Perimeter (Perimeter = pi * (radius * 2) sq.units)\n";
 		std::cout << "3. Exit (Go back to main menu)\n";
 
-		switch (int i = getUtils().enterInput(3)) { //gets user's input and selects corresponding function with selected menu option or exits if 3
+		switch (int i = utils::enterInput(3)) { //gets user's input and selects corresponding function with selected menu option or exits if 3
 
 		case 1: //area
 			calculateArea();
@@ -66,7 +66,7 @@ void Circle::calculateArea() {
 
 	std::cout << "\n\nAREA\n";
 	std::cout << "Please enter the radius of the circle in centimeters: ";
-	float radius = getUtils().enterInput(0); //get user input
+	float radius = utils::enterInput(0); //get user input
 
 	float area = 3.14159 * std::pow(radius, 2); //calculate result
 
@@ -74,7 +74,7 @@ void Circle::calculateArea() {
 
 	//confirmation input
 	std::cout << "Enter 1 to go back: ";
-	getUtils().enterInput(1);
+	utils::enterInput(1);
 
 }
 
@@ -83,7 +83,7 @@ void Circle::calculatePerimeter() {
 
 	std::cout << "\n\PERIMETER\n";
 	std::cout << "Please enter radius of the circle in centimeters: ";
-	float radius = getUtils().enterInput(0); //get user input
+	float radius = utils::enterInput(0); //get user input
 
 	float perimeter = 3.14159 * (radius * 2); //calculates result
 
@@ -91,6 +91,6 @@ void Circle::calculatePerimeter() {
 
 	//confirmation input
 	std::cout << "Enter 1 to go back: ";
-	getUtils().enterInput(1);
+	utils::enterInput(1);
 
 }

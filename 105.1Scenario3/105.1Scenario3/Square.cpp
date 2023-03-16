@@ -16,7 +16,7 @@ void Square::menu() {
 		std::cout << "2. Perimeter (Perimeter = 4 * base sq.units)\n";
 		std::cout << "3. Exit (Go back to main menu)\n";
 
-		switch (int i = getUtils().enterInput(3)) { //gets user's input and selects corresponding function with selected menu option or exits if 3
+		switch (int i = utils::enterInput(3)) { //gets user's input and selects corresponding function with selected menu option or exits if 3
 
 		case 1: //area
 			calculateArea();
@@ -52,14 +52,14 @@ void Square::calculateArea() {
 
 	std::cout << "\n\nAREA\n";
 	std::cout << "Please enter the side of the square in centimeters: ";
-	float area = getUtils().enterInput(0); //getting user input
+	float area = utils::enterInput(0); //getting user input
 	area = area * area; //calculating the area
 	 
 	std::cout << "\n\nResult: " << area << "sq.cm\n\n"; //displaying the result
 
 	//confirmation input
 	std::cout << "Enter 1 to go back: "; 
-	getUtils().enterInput(1);
+	utils::enterInput(1);
 
 }
 
@@ -69,13 +69,13 @@ void Square::calculatePerimeter() {
 
 	std::cout << "\n\PERIMETER\n";
 	std::cout << "Please enter the side of the square in centimeters: ";
-	float perimeter = getUtils().enterInput(0); //getting user input
+	float perimeter = utils::enterInput(0); //getting user input
 	perimeter = perimeter * 4; //calculating the perimeter
 
 	std::cout << "\n\nResult: " << perimeter << "sq.cm\n\n"; //displaying the result
 
 	//confirmation input
 	std::cout << "Enter 1 to go back: ";
-	getUtils().enterInput(1);
+	utils::enterInput(1);
 
 }

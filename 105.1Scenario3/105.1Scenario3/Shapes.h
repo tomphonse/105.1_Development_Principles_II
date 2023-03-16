@@ -8,7 +8,6 @@ class Shapes
 
 private:
 
-	Utils utils; //utils instance that all children can use with getUtils() getter
 
 public:
 
@@ -16,8 +15,6 @@ public:
 	virtual void generateShape() = 0; //generates ascii shape
 	virtual void calculateArea() = 0; //calculates the shape's area and displays result
 	virtual void calculatePerimeter() = 0; //calculates the shape's perimeter and displays result
-
-	Utils getUtils(); //getter for Utils utils instance
 
 
 };
