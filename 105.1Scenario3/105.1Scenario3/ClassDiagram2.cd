@@ -3,6 +3,9 @@
   <Comment CommentText="105.1Scenario3 Main&#xD;&#xA;&#xD;&#xA;utils : Utils&#xD;&#xA;shapesList : Shapes*[4] {new Square, new Rectangle, new Triangle, new Circle}&#xD;&#xA;main() : int">
     <Position X="1.328" Y="1.25" Height="1.059" Width="4.634" />
   </Comment>
+  <Comment CommentText="Utils namespace&#xD;&#xA;&#xD;&#xA;enterInput(int maxNum) : float ">
+    <Position X="8.755" Y="1.704" Height="0.944" Width="1.959" />
+  </Comment>
   <Class Name="Circle">
     <Position X="5.5" Y="4" Width="2" />
     <TypeIdentifier>
